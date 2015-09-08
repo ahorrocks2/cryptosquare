@@ -1,41 +1,37 @@
+var user_input = prompt("Enter a sentence");
 
-var number = parseInt(prompt("Enter a number"));
+var letterCount = function(x) {
+  var array = x.toLowerCase().split("");
+  return array.length;
+};
 
-var factorial = function(n) {
-  if (n === 0) {
-    return 1
+var squareSize = function(x) {
+  var root = 0;
+  var rows = 0;
+  var columns = 0;
+  root = Math.sqrt(letterCount(x));
+
+  if (Number.isInteger(root) === true) {
+    var rows = root;
+    var columns = root;
   } else {
-    result = 1;
-    for (i = 1; i <= n; i++)
-      result *= i;
-  }
+    var rows = Math.round(root);
+    var columns = rows + 1;
+  };
 
-  return result;
-}
+  size = [rows,columns];
+  return size;
+};
 
-document.write(factorial(number));
-
-
-// for (i = 1; i <= number; i++)
-//   result =
-//   result *= i
+console.log(squareSize("aaaaaaa"))
 
 
 
-//
-// $(function() {
-//   $("form#leap-year").submit(function(event) {
-//     var year = parseInt($("input#year").val());
-//     var result = leapYear(year);
-//
-//     $(".year").text(year);
-//     if(!result) {
-//       $(".not").text("not");
-//     } else {
-//       $(".not").text("");
-//     }
-//
-//     $("#result").show();
-//     event.preventDefault();
-//   });
-// });
+// d o n t c o m p a
+// reyoursel
+// ftoothers
+// compareyo
+// urselftot
+// hepersony
+// ouwereyes
+// terday

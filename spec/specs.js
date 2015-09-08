@@ -1,9 +1,16 @@
-describe('factorial', function() {
-  it('returns 1 for 0!', function() {
-    expect(factorial(0)).to.eq(1);
+// describe('string', function( {
+//   // it('downcases inputted string' {
+//   //   expect("HELLO WORLD").to.eq("hello world");
+//   // });
+// });
+describe('letterCount', function() {
+  it('count how many letters are in the input string', function() {
+    expect(letterCount('abc')).to.eq(3)
   });
+});
 
-  it('returns full factorial for a given number', function() {
-    expect(factorial(3)).to.eq(6);
+describe('squareSize', function() {
+  it('determine number of rows and columns needed', function() {
+    expect(squareSize("abcdefghij")).to.eq([3,4])
   });
 });
